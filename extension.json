@@ -1,0 +1,31 @@
+{
+    "name": "BOF Roast",
+    "version": "0.0.0",
+    "command_name": "bof-roast",
+    "extension_author": "moloch--",
+    "original_author": "cube0x0",
+    "repo_url": "https://github.com/sliverarmory/BofRoast",
+    "help": "Beacon Object File repo for roasting Active Directory",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "kerberoast.x64.o"
+        },
+        {
+            "os": "windows",
+            "arch": "386",
+            "path": "kerberoast.x86.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "spn",
+            "desc": "target spn",
+            "type": "string",
+            "optional": false
+        }
+    ]
+}

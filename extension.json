@@ -24,7 +24,7 @@
         {
             "name": "spn",
             "desc": "target spn",
-            "type": "string",
+            "type": "wstring",
             "optional": false
         }
     ]
